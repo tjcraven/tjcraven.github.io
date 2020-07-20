@@ -70,10 +70,11 @@ new Vue({
 .icon {
 	max-height: 100%; 
 	display:block;
-    margin:auto;"
+    margin:auto;
 }
 </style>
-<embed src="https://tjcraven-portfolio.s3.amazonaws.com/music.mp3" autostart="true" loop="true"
-width="2" height="0">
-</embed>
+<audio src="https://tjcraven-portfolio.s3.amazonaws.com/music.mp3" autostart loop>
+	<iframe src="https://tjcraven-portfolio.s3.amazonaws.com/music.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+</iframe> 
+</audio>
 </html>
