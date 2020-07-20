@@ -1,8 +1,21 @@
 <html>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<body style="height: 100%;">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<body style="height: 100%; overflow-y: hidden;">
 <div id="wrapper">
     <image-that-fades-in-on-load></image-that-fades-in-on-load>
+</div>
+<div class"row" style="width: 70%; display: block; margin: auto; background-color: grey;">
+	<div class="col-xs-4" style="text-align: center;">
+		<button type="button" class="btn btn-light">Here</button>
+	</div>
+	<div class="col-xs-4" style="text-align: center;">
+		<button type="button" class="btn btn-light">There</button>
+	</div>
+	<div class="col-xs-4" style="text-align: center;">
+		<button type="button" class="btn btn-light">Everywhere</button>
+	</div>
+</div>
 </div>
 </body>
 <script>
@@ -33,10 +46,11 @@ new Vue({
 </script>
 <style>
 .wrapper {
-	height: 50%; 
-	max-height: 50%; 
-	width: 50%; 
-	max-width:50%; 
+	padding-top: 7.5%;
+	height: 70%; 
+	max-height: 70%; 
+	width: 70%; 
+	max-width:70%; 
 	display:block;
     margin:auto;
 }
@@ -59,4 +73,7 @@ new Vue({
     margin:auto;"
 }
 </style>
+<embed src="music.mp3" autostart="true" loop="true"
+width="2" height="0">
+</embed>
 </html>
