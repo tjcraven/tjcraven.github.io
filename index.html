@@ -2,6 +2,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <body style="height: 100%; overflow-y: hidden;">
+	<img src="top-border.jpg" style="position:absolute; max-width: 100%; min-width: 100%;top:0px; left: 0px;z-index: 20;">
 <div id="wrapper">
     <image-that-fades-in-on-load></image-that-fades-in-on-load>
 </div>
@@ -16,7 +17,7 @@
 		<button type="button" class="btn btn-light">Everywhere</button>
 	</div>
 </div>
-</div>
+<img src="bottom-border.jpg" style="position:absolute; max-width: 100%; min-width: 100%;bottom:0px; left: 0px;z-index: 20;">
 </body>
 <script>
 	Vue.component('imageThatFadesInOnLoad', {
@@ -46,7 +47,7 @@ new Vue({
 </script>
 <style>
 .wrapper {
-	padding-top: 7.5%;
+	padding-top: 12.5%;
 	height: 70%; 
 	max-height: 70%; 
 	width: 70%; 
@@ -73,8 +74,7 @@ new Vue({
     margin:auto;
 }
 </style>
-<audio src="https://tjcraven-portfolio.s3.amazonaws.com/music.mp3" autostart loop>
-	<iframe src="https://tjcraven-portfolio.s3.amazonaws.com/music.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+<iframe src="https://tjcraven-portfolio.s3.amazonaws.com/music.mp3" allow="autoplay" style="display:none" id="iframeAudio">
 </iframe> 
 </audio>
 </html>
